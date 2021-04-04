@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.2.0/dist/aframe-environment-component.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <a-entity environment="gridColor:#e0e9eb;dressingOnPlayArea:1;dressingAmount:0;dressingVariance:-4.16 6.39 -2.22;dressingColor:#2b6827;dressing:trees;groundYScale:0.66;groundColor2:#110e03;groundColor:#d9dde7;groundTexture:walkernoise;ground:noise;playArea:3;skyColor:#ffffff;horizonColor:#a8b07d;skyType:none;active:true;lightPosition:0 -0.01 -0.46;fog:0.7;grid:1x1;preset:starry" preset-switcher="" id="environment" mixin="null" pool="" sound=""><a-entity class="environment" position="0 50 0" light="intensity:0.6;color:#ffffff;groundColor:#6a769a;type:hemisphere"></a-entity><a-entity class="environment" position="0 -0.01 -0.46" light="shadowCameraLeft:-10;shadowCameraBottom:-10;shadowCameraRight:10;shadowCameraTop:10;intensity:0.6"></a-entity><a-entity rotation="-90 0 0" class="environmentGround environment" scale="1 1 0.66" shadow="cast:false;receive:false"></a-entity><a-entity class="environmentDressing environment"></a-entity><a-sky radius="200" theta-length="110" class="environment" visible="false" geometry="" material="npot:false"></a-sky><a-entity id="stars" visible="false"></a-entity></a-entity>
+   
+        <a-assets>
+
+    <img id="tibu1" src="Tibu1.png">
+    <img id="tibu2" src="tibu2.png">
+    <img id="tibu3" src="tibu3.png">
+    <img id="tibu4" src="tibu4.png">
+    <img id="tibu5" src="tibu5.png">
+    <img id="tibu6" src="tibu6.png">
+    <img id="tibu7" src="tibu7.png">
+    <img id="tibu8" src="tibu8.png">
+    <img id="tibu9" src="tibu9.png">
+    <img id="tibu10" src="tibu10.png">
+    <img id="tibu11" src="tibu11.png">
+    <img id="tibu12" src="tibu12.png">
+    <img id="tibu13" src="tibu13.png">
+    <img id="tibu14" src="tibu14.png">
+    <img id="tibu15" src="tibu15.png">
+    <img id="tibu16" src="tibu16.png">
+    <img id="tibu17" src="tibu17.png">
+    <img id="tibu18" src="tibu18.png">
+    <img id="tibu19" src="tibu19.png">
+    <img id="tibu20" src="tibu20.png">
+    <img id="tibu22" src="tibu22.png">  
+    <img id="tibu30" src="tibu30.png">  
+    <img id="tibu31" src="tibu31.png">
+    <img id="tibu32" src="tibu32.png">
+    <img id="tibu33" src="tibu33.png">  
+    <img id="tibu34" src="tibu34.png">  
+    <img id="tibu35" src="tibu35.png">  
+    <img id="tibu36" src="tibu36.png"> 
+    <img id="tibu37" src="tibu37.png"> 
+    <img id="tibu38" src="tibu38.png"> 
+    <img id="tibu39" src="tibu39.png">  
+    <img id="tibu40" src="tibu40.png">  
+    <img id="tibu41" src="tibu41.png">  
+    <img id="tibu42" src="tibu42.png">  
+    <img id="tibu43" src="tibu43.png">  
+    <img id="tibu44" src="tibu44.png">  
+    <img id="tibu45" src="tibu45.png">  
+    <img id="tibu46" src="tibu46.png">  
+    <img id="tibu47" src="tibu47.png">  
+    <img id="tibu48" src="tibu48.png">  
+    <img id="tibu49" src="tibu49.png">
+    <img id="tibu50" src="tibu50.png">  
+    <img id="tibu51" src="tibu51.png">  
+    <img id="tibu52" src="tibu52.png"> 
+    <img id="tibu54" src="tibu54.png">  
+    
+    <img id="CR5" src="CR5.jpg">  
+    <img id="2" src="2.jpg">  
+    <img id="dede" src="dede.jpg">  
+    <img id="exo5" src="exo5.jpg">  
+    <img id="FOTOS" src="FOTOS.jpg">  
+    <img id="HEY3" src="HEY3.jpg">  
+    <img id="IKKI" src="IKKI.jpg">  
+    <img id="Playatrasera2" src="Playatrasera2.jpg">  
+    <img id="popol" src="popol.jpg">  
+    <img id="sin" src="sin.jpg">  
+    <img id="tuyyo" src="tuyyo.jpg">  
+    <img id="vente" src="vente.jpg">  
+    <img id="youcanloveme" src="youcanloveme.jpg">  
+    <img id="Niu" src="Niu.jpg">  
+    <img id="sire" src="sire.jpg">  
+  
+    <img id="Pasto" src="Pasto.jpg">  
+    
+    <audio id="QSR1" src="QSR1.mp3"></audio>
+    <audio id="QSR2" src="QSR2.mp3"></audio>
+    <audio id="QSR3" src="QSR3.mp3"></audio>
+    <audio id="QSR4" src="QSR4.mp3"></audio>
+    <audio id="QSR5" src="QSR5.mp3"></audio>
+    <audio id="QSR6" src="QSR6.mp3"></audio>
+    <audio id="QSR7" src="QSR7.mp3"></audio>
+   
+    <video id="deambulii" autoplay loop="true" src="deambulii.mp4"></video>
+    <video id="nadaesreal" autoplay loop="true" src="nadaesreal.mp4"></video>
+    <video id="Fitos" autoplay loop="true" src="Fitos.mp4"></video>
+    <video id="Misbrazos" autoplay loop="true" src="Misbrazos.mp4"></video>
+    <video id="Grito" autoplay loop="true" src="Grito.mp4"></video>
+    <video id="#Trueno" autoplay loop="true" src="Trueno.mp4"></video>
+    
+    <a-asset-item id="bonsai" src="./asset/bonsai.gltf"></a-asset-item>
+    <a-asset-item id="escultura" src="./asset/escultura.gltf"></a-asset-item>
+    <a-asset-item id="Florbase1" src="./asset/Florbase1.gltf"></a-asset-item>
+    <a-asset-item id="Gasmask" src="./asset/Gasmask.gltf"></a-asset-item>
+    <a-asset-item id="ifon" src="./asset/ifon.gltf"></a-asset-item>
+    <a-asset-item id="Maceta" src="./asset/Maceta.gltf"></a-asset-item>
+    <a-asset-item id="manoleon" src="./asset/manoleon.gltf"></a-asset-item>
+    <a-asset-item id="mariposa" src="./asset/mariposa.gltf"></a-asset-item>
+    <a-asset-item id="tren" src="./asset/tren.gltf"></a-asset-item>
+    <a-asset-item id="car" src="./asset/car.gltf"></a-asset-item>
+    <a-asset-item id="coche" src="./asset/coche.gltf"></a-asset-item>
+    <a-asset-item id="Preso" src="./asset/Preso.gltf"></a-asset-item>
+    <a-asset-item id="Alexia" src="./asset/Alexia.gltf"></a-asset-item>
+    <a-asset-item id="manoleon2" src="./asset/manoleon2.gltf"></a-asset-item>
+    <a-asset-item id="manoleon3" src="./asset/manoleon3.gltf"></a-asset-item>
+    <a-asset-item id="manoleon4" src="./asset/manoleon4.gltf"></a-asset-item>
+    <a-asset-item id="arboli" src="./asset/arboli.gltf"></a-asset-item>
+    <a-asset-item id="ebri" src="./asset/ebri.gltf"></a-asset-item>
+    
+    <a-asset-item id="flor1" src="./asset/flor1.gltf"></a-asset-item>
+    <a-asset-item id="flor2" src="./asset/flor2.gltf"></a-asset-item>
+    <a-asset-item id="flor3" src="./asset/flor3.gltf"></a-asset-item>
+    <a-asset-item id="flor4" src="./asset/flor4.gltf"></a-asset-item>
+    <a-asset-item id="flor5" src="./asset/flor5.gltf"></a-asset-item>
+    <a-asset-item id="flor6" src="./asset/flor6.gltf"></a-asset-item>
+    <a-asset-item id="flor7" src="./asset/flor7.gltf"></a-asset-item>
+    <a-asset-item id="flor8" src="./asset/flor8.gltf"></a-asset-item>
+    <a-asset-item id="flor9" src="./asset/flor9.gltf"></a-asset-item>
+    <a-asset-item id="flor10" src="./asset/flor10.gltf"></a-asset-item>
+    <a-asset-item id="flor11" src="./asset/flor11.gltf"></a-asset-item>
+    <a-asset-item id="flor12" src="./asset/flor12.gltf"></a-asset-item>
+    <a-asset-item id="flor13" src="./asset/flor13.gltf"></a-asset-item>
+    <a-asset-item id="flor14" src="./asset/flor14.gltf"></a-asset-item>
+    <a-asset-item id="flor15" src="./asset/flor15.gltf"></a-asset-item>
+    <a-asset-item id="flor16" src="./asset/flor16.gltf"></a-asset-item>
+    <a-asset-item id="flor17" src="./asset/flor17.gltf"></a-asset-item>
+    <a-asset-item id="flor18" src="./asset/flor18.gltf"></a-asset-item>
+    <a-asset-item id="flor19" src="./asset/flor19.gltf"></a-asset-item>
+    <a-asset-item id="flor20" src="./asset/flor20.gltf"></a-asset-item>
+ 
+   </a-assets>
+
+   <a-image src="#tibu1" width="10" height="5" material="side:double; alphaTest:0.5" position="-68.391 6.799 -40.336" scale="2.019 1.855 8.634" rotation="3.309 44.694 -29.414"></a-image>
+   <a-image src="#tibu2" width="10" height="5" material="side:double; alphaTest:0.5" position="-69.133 3 -43.446" scale="1 1 1" rotation="-58.985 0 27.626"></a-image>
+   <a-image src="#tibu3" width="10" height="5" material="side:double; alphaTest:0.5" position="-73.172 4.666 -40.832" scale="1.983 2.155 1.850" rotation="0 7.509 0"></a-image>
+   <a-image src="#tibu4" width="10" height="5" material="side:double; alphaTest:0.5" position="-75.711 6.513 -39.416" scale="3.758 3.723 1" rotation="-168.13 -65.739 -172.95"></a-image>
+   <a-image src="#tibu5" width="10" height="5" material="side:double; alphaTest:0.5" position="-77.331 4.141 -39.972" scale="1.582 1.827 1" rotation="0 -52.819 0"></a-image>
+   <a-image src="#tibu6" width="10" height="5" material="side:double; alphaTest:0.5" position="-69.767 8.565 -38.036" scale="1.510 1.606 1" rotation="-70.007 5.098 -72.403"></a-image>
+   <a-image src="#tibu7" width="10" height="5" material="side:double; alphaTest:0.5" position="-64.778 9.851 -38.793" scale="1 1.698 1" rotation="164.808 -17.931 3.983"></a-image>
+   <a-image src="#tibu8" width="10" height="5" material="side:double; alphaTest:0.5" position="-63.852 0.597 -39.830" scale="1.406 1.290 14.944" rotation="138.415 -64.690 158.824"></a-image>
+   <a-image src="#tibu9" width="10" height="5" material="side:double; alphaTest:0.5" position="-64.589 2.798 -45.649" scale="1.484 2.198 1" rotation="-101.24 21.567 -133.33"></a-image>
+   <a-image src="#tibu10" width="10" height="5" material="side:double; alphaTest:0.5" position="-79.274 8.161 -42.257" scale="1.579 2.483 1" rotation="25.313 75.612 -45.977"></a-image>
+   <a-image src="#tibu11" width="10" height="5" material="side:double; alphaTest:0.5" position="-40.451 7.709 -62.539" scale="1.579 2.483 1" rotation="-2.609 22.097 0.384"></a-image>
+   <a-image src="#tibu12" width="10" height="5" material="side:double; alphaTest:0.5" position="-49.776 10.251 -55.664" scale="0.983 2.004 1" rotation="0 -27.956 0"></a-image>
+   <a-image src="#tibu13" width="10" height="5" material="side:double; alphaTest:0.5" position="-46.504 2.581 -60.479" scale="2.952 4.755 1" rotation="-68.188 35.643 -52.721"></a-image>
+   <a-image src="#tibu14" width="10" height="5" material="side:double; alphaTest:0.5" position="-40.045 4.568 -60.657" scale="1.579 2.483 1" rotation="-51.751 43.950 -50.832"></a-image>
+   <a-image src="#tibu15" width="10" height="5" material="side:double; alphaTest:0.5" position="-42.074 4.200 -58.385" scale="2.465 3.895 1" rotation="-4.129 40.642 128.352"></a-image>
+   <a-image src="#tibu16" width="10" height="5" material="side:double; alphaTest:0.5" position="-51.729 6 -56.664" scale="1.579 1.605 1" rotation="0 26.313 0"></a-image>
+   <a-image src="#tibu17" width="10" height="5" material="side:double; alphaTest:0.5" position="-44.502 7.090 -57.459" scale="2.021 1.777 1" rotation="0 0 0"></a-image>
+   <a-image src="#tibu18" width="10" height="5" material="side:double; alphaTest:0.5" position="-49.624 5.182 -55.967" scale="1.381 2.621 1" rotation="-8.895 -46.762 81.728"></a-image>
+   <a-image src="#tibu19" width="10" height="5" material="side:double; alphaTest:0.5" position="-36.798 2.818 -54.875" scale="4.060 3.061 1" rotation="-7.915 -20.271 2.299"></a-image>
+   <a-image src="#tibu20" width="10" height="5" material="side:double; alphaTest:0.5" position="-48.531 6 -56.046" scale="0.499 2.483 1" rotation="0 0 0"></a-image>
+   <a-image src="#tibu22" width="10" height="5" material="side:double; alphaTest:0.5" position="-76.379 7.992 -38.810" scale="0.458 0.751 3" rotation="0 46.400 3"></a-image>
+
+   
+   <a-image src="#tibu30" width="10" height="5" material="alphaTest: 0.5" position="46.776 1.47626 11.74573" scale="0.458 0.751 3" rotation="" geometry=""></a-image>
+   <a-image src="#tibu31" width="10" height="5" material="alphaTest: 0.5" position="49.813 2.29567 13.73545" scale="0.458 0.751 3" rotation="0 -51.46020436967489 0" geometry=""></a-image>
+   <a-image src="#tibu32" width="10" height="5" material="alphaTest: 0.5" position="45.863 2.15614 13.2309" scale="0.458 0.751 3" rotation="0 92.6489943460395 4.192332186972234" geometry=""></a-image>
+   <a-image src="#tibu33" width="10" height="5" material="alphaTest: 0.5" position="41.283 3.02641 12.45834" scale="0.59989 1.00371 3.19933" rotation="-68.03530042501447 83.33843017516364 93.35373243405041" geometry=""></a-image>
+   <a-image src="#tibu34" width="10" height="5" material="alphaTest: 0.5" position="44.972 1.92141 12.54515" scale="0.458 0.751 3" rotation="0 162.73090001526128 -3.524263397849694" geometry=""></a-image>
+   <a-image src="#tibu35" width="10" height="5" material="alphaTest: 0.5" position="51.822 2.19233 12.7188" scale="0.64038 1.08422 3" rotation="-24.74089055154408 27.214349353123843 4.734350261165992" geometry=""></a-image>
+   <a-image src="#tibu36" width="10" height="5" material="alphaTest: 0.5" position="41.711 1.62453 11.69108" scale="0.7358 1.33524 3" rotation="0 -43.523592991522726 11.697506345390888" geometry=""></a-image>
+   <a-image src="#tibu37" width="10" height="5" material="alphaTest: 0.5" position="49.032 2.59619 14.5074" scale="0.11699 0.35949 2.4914" rotation="" geometry=""></a-image>
+   <a-image src="#tibu38" width="10" height="5" material="alphaTest: 0.5" position="48.896 2.02995 15.17649" scale="0.93123 1.07482 3" rotation="0 77.58077729189398 0" geometry=""></a-image>
+   <a-image src="#tibu39" width="10" height="5" material="alphaTest: 0.5" position="42.575 1.61911 10.43825" scale="0.82332 1.04841 3" rotation="-51.14106687778702 -145.3101182543086 19.45936559602815" geometry=""></a-image>
+   <a-image src="#tibu40" width="10" height="5" material="alphaTest: 0.5" position="41.283 5.04898 11.69928" scale="0.69669 0.87113 3.33541" rotation="0 -110.56710347316574 0" geometry=""></a-image>
+   <a-image src="#tibu41" width="10" height="5" material="alphaTest: 0.5" position="53.565 2.15236 12.37944" scale="0.62175 1.00537 3" rotation="0 -53.07651830973894 10.7590014769666" geometry=""></a-image>
+   <a-image src="#tibu42" width="10" height="5" material="alphaTest: 0.5" position="46.68 1.52573 13.11066" scale="1.25404 1.28977 3" rotation="" geometry=""></a-image>
+   <a-image src="#tibu43" width="10" height="5" material="alphaTest: 0.5" position="37.385 0.89267 11.01115" scale="0.65473 0.84058 3.6695" rotation="0 -20.91467839566044 -63.34449495627842" geometry=""></a-image>
+   <a-image src="#tibu44" width="10" height="5" material="alphaTest: 0.5" position="40.732 0.88695 10.6762" scale="0.458 0.751 3" rotation="0 -46.19472223242263 0" geometry=""></a-image>
+   <a-image src="#tibu45" width="10" height="5" material="alphaTest: 0.5" position="38.714 1.8815 11.56732" scale="0.458 0.751 3" rotation="0 -44.319431368959435 0" geometry=""></a-image>
+   <a-image src="#tibu46" width="10" height="5" material="alphaTest: 0.5" position="37.927 1.68209 11.59092" scale="0.72584 1.17704 3" rotation="-0.016615776058793875 -2.9495867293334777 47.10629808447576" geometry=""></a-image>
+   <a-image src="#tibu47" width="10" height="5" material="alphaTest: 0.5" position="46.103 1.72849 12.69823" scale="0.458 0.751 3" rotation="0 35.92559967029288 0" geometry=""></a-image>
+   <a-image src="#tibu48" width="10" height="5" material="alphaTest: 0.5" position="45.812 0.82975 14.73193" scale="0.458 0.751 3" rotation="" geometry=""></a-image>
+   <a-image src="#tibu49" width="10" height="5" material="alphaTest: 0.5" position="48.728 2.63409 14.27932" scale="0.458 0.751 3" rotation="60.7770710762972 0 0" geometry=""></a-image>
+   <a-image src="#tibu50" width="10" height="5" material="alphaTest: 0.5" position="52.027 1.17396 13.52269" scale="0.458 0.751 3" rotation="-68.6621162528876 0 -1.3361375782450797" geometry=""></a-image>
+   <a-image src="#tibu51" width="10" height="5" material="alphaTest: 0.5" position="41.859 3.25204 11.66134" scale="0.75738 1.17228 3.75488" rotation="1.0874738951583025 25.808883881667935 81.74847229367559" geometry=""></a-image>
+   <a-image src="#tibu52" width="10" height="5" material="alphaTest: 0.5" position="51.586 3.75686 11.45707" scale="0.75738 1.17228 3.75488" rotation="51.91513285900876 126.80472738717326 -28.847852027041817" geometry=""></a-image>
+   <a-image src="#tibu54" width="10" height="5" material="alphaTest: 0.5" position="53.102 1.57985 13.89764" scale="" rotation="0 38.89180217568515 0" geometry=""></a-image>
+   
+  
+   <a-image src="#CR5" material="alphaTest: 0.5" position="-78.4201 20.31451 -1.99773" rotation="25.25827144054721 90.37263302598474 0" geometry="" scale="22 12 1"></a-image>
+   <a-image src="#Playatrasera2" material="alphaTest: 0.5" position="-73.74539 11.48082 12.44329" rotation="41.1996761744721 174.59513707903525 68.54294103150038" geometry="" scale="5 7 1"></a-image>
+   <a-image src="#youcanloveme" material="alphaTest: 0.5" position="-68.85356 5.60423 -2.32245" rotation="9.319158537802839 90.00021045914971 0" geometry="" scale="8 10 1"></a-image>
+   <a-image src="#sin" material="alphaTest: 0.5" position="17.46479 5 -59.24475" rotation="0 -45 0" geometry="" scale="12 8 1"></a-image>
+   <a-image src="#HEY3" material="alphaTest: 0.5" position="2.8502 5 -61.30731" rotation="0 -45 0" geometry="" scale="11.2 8 1"></a-image>
+   <a-image src="#popol" material="alphaTest: 0.5" position="-10.90049 5.54871 -61.79154" rotation="0 -45 0" geometry="" scale="12 8 1"></a-image>
+   <a-image src="#2" material="alphaTest: 0.5" position="62.61695 10.14434 2.90537" rotation="44.67982182209673 -90.00021045914971 0" geometry="" scale="12 8 1"></a-image>
+   <a-image src="#exo5" material="alphaTest: 0.5" position="-24.69557 0.12553 39.93758" rotation="90 0 0" geometry="" scale="9 9 1"></a-image>
+   <a-image src="#IKKI" material="alphaTest: 0.5" position="10.07412 0.05298 25.76796" rotation="-90 -179.9998479605043 0" geometry="" scale="7 7 1"></a-image>
+   <a-image src="#tuyyo" material="alphaTest: 0.5" position="-28.549 6.33104 71.86877" rotation="0 180 0" geometry="" scale="21 12 1"></a-image>
+   <a-image src="#vente" material="alphaTest: 0.5" position="20.05066 4.27548 61.78046" rotation="0 124.73405791557049 0" geometry="" scale="12 8 1"></a-image>
+   <a-image src="#FOTOS" material="alphaTest: 0.5" position="10.54351 3.90345 62.2659" rotation="0 -144.12466857618293 0" geometry="" scale="12 8 1"></a-image>
+   <a-image src="#dede" material="alphaTest: 0.5" position="28.1343 4.55875 60.62991" rotation="0 -131.40385960868838 0" geometry="" scale="12 8 3"></a-image>
+   <a-image src="#Niu" material="alphaTest: 0.5" position="-44.29002 0.06366 -14.47896" rotation="-90 90.00021045914971 0" geometry="" scale="21 12 1"></a-image>
+   <a-image src="#sire" material="alphaTest: 0.5" position="67.31514 0.20 67.13627" rotation="-90 0 0" width="15" height="15" color="#7BC8A4" geometry="" scale="3 2 1"></a-image>
+
+   <a-image src="#Pasto" width="10" height="5" material="alphaTest: 0.5" position="-72.2358 0.08904 45.7194" scale="" rotation="90 0 0" geometry=""></a-image>
+   <a-image src="#Pasto" width="10" height="5" material="alphaTest: 0.5" position="-73.98809 0.08904 41.14655" scale="" rotation="90 0 0" geometry=""></a-image>
+   <a-image src="#Pasto" width="10" height="5" material="alphaTest: 0.5" position="-83 0.08904 39.66828" scale="" rotation="90 0 0" geometry=""></a-image>
+   <a-image src="#Pasto" width="10" height="5" material="alphaTest: 0.5" position="-81.65485 0.08904 44.33406" scale="" rotation="90 0 0" geometry=""></a-image>
+   <a-image src="#Pasto" width="10" height="5" material="alphaTest: 0.5" position="-69.10921 0.08904 61.41147" scale="" rotation="90 0 0" geometry=""></a-image>
+   <a-image src="#Pasto" width="10" height="5" material="alphaTest: 0.5" position="-81.66011 0.08904 48.66156" scale="" rotation="90 0 0" geometry=""></a-image>
+   <a-image src="#Pasto" width="10" height="5" material="alphaTest: 0.5" position="-75.82228 0.08904 62.9681" scale="" rotation="90 0 0" geometry=""></a-image>
+   <a-image src="#Pasto" width="10" height="5" material="alphaTest: 0.5" position="-79.87679 0.08904 66.78522" scale="" rotation="90 0 0" geometry=""></a-image>
+   <a-image src="#Pasto" width="10" height="5" material="alphaTest: 0.5" position="-84.20835 0.08904 52.49955" scale="" rotation="90 0 0" geometry=""></a-image>
+   <a-image src="#Pasto" width="10" height="5" material="alphaTest: 0.5" position="-68.40126 0.08904 57.69261" scale="" rotation="90 0 0" geometry=""></a-image>
+   <a-image src="#Pasto" width="10" height="5" material="alphaTest: 0.5" position="-78.40885 0.08904 58.12034" scale="" rotation="90 0 0" geometry=""></a-image>
+   <a-image src="#Pasto" width="10" height="5" material="alphaTest: 0.5" position="-80.28532 0.08904 59.57073" scale="" rotation="90 0 0" geometry=""></a-image>
+   <a-image src="#Pasto" width="10" height="5" material="alphaTest: 0.5" position="-71.22559 0.08904 65.41617" scale="" rotation="90 0 0" geometry=""></a-image>
+   <a-image src="#Pasto" width="10" height="5" material="alphaTest: 0.5" position="-69.13453 0.08904 54.75258" scale="" rotation="90 0 0" geometry=""></a-image>
+   <a-image src="#Pasto" width="10" height="5" material="alphaTest: 0.5" position="-72.2342 0.08904 50.52577" scale="" rotation="90 0 0" geometry=""></a-image>
+   <a-image src="#Pasto" width="10" height="5" material="alphaTest: 0.5" position="-78.6623 0.08904 53.34595" scale="" rotation="90 0 0" geometry=""></a-image>
+   
+   <a-sound src="#QSR1"  autoplay="true" loop="true" volume=" 9" position="-75.36439 2.199 45.82642"  ></a-sound>
+   <a-sound src="#QSR2"  autoplay="true" loop="true" volume=" 9" position="-60 2 -48"  ></a-sound>
+   <a-sound src="#QSR3"  autoplay="true" loop="true" volume=" 9" position="2.8502 2 -61.30731"  ></a-sound>
+   <a-sound src="#QSR4"  autoplay="true" loop="true" volume=" 9" position="37.44327 -3.40686 -32.40116"  ></a-sound>
+   <a-sound src="#QSR5"  autoplay="true" loop="true" volume=" 9" position="42.575 1.61911 10.43825"  ></a-sound>
+   <a-sound src="#QSR6"  autoplay="true" loop="true" volume=" 9" position="16.52736 0.022 53.54551"  ></a-sound>
+   <a-sound src="#QSR7"  autoplay="true" loop="true" volume=" 9" position="-68.85356 5.60423 -2.32245"  ></a-sound>
+   
+   <a-video src="#deambulii" width="10" height="10" position="40.91789 5.28181 -23.88929" rotation="0 -55.188 0" material="" geometry=""></a-video>
+   <a-video src="#Fitos" width="10" height="10" position="32.88127 5.28179 -42.31749" rotation="0 57.03680258968319 0" material="" geometry=""></a-video>
+   <a-video src="#Misbrazos" width="15" height="10" position="43.14583 5.28181 -36.63967" rotation="0 -27.098038920712284 0" material="" geometry=""></a-video>
+   <a-video src="#Grito" width="10" height="10" position="46.63882 5.28181 -24.21186" rotation="0 -117.03465106460247 0" material="" geometry=""></a-video>
+   <a-video src="#nadaesreal" width="10" height="10" position="39.72438 10.22384 -28.91112" rotation="88.43890046741822 -128.65194331867505 143.63937332370713" material="" geometry=""></a-video>
+   
+   <a-entity gltf-model="#escultura" position="0 -0.401 0" rotation="0 0 0" ></a-entity>
+   <a-entity gltf-model="#Gasmask" position="0 2 -2.436" scale="0.010 0.010 0.010" rotation="0 0 0" ></a-entity>
+   <a-entity gltf-model="#manoleon" position="6.63317 -0.22149 5.66159" scale="0.44622 0.31685 0.48881" rotation="0 0 0" ></a-entity>
+   <a-entity gltf-model="#tren" position="-6.27192 3.09083 -43.37862" scale="1 1 1" rotation="-33.08716675321478 118.24301905453339 40.69375444137159" ></a-entity>
+   <a-entity gltf-model="#car" position="-16.16428 0.022 47" rotation="0 180 0" scale="0.025 0.025 0.025" animation="property: position; to: -16.16428 0.022 -47; dur: 2000; easing: linear; loop: true" ></a-entity>
+   <a-entity gltf-model="#coche" position="16.44993 0.04289 47" scale="" rotation="0 180 0" animation="property: position; to: 16.44993 0.04289 -47; dur: 5000; easing: linear; loop: true" ></a-entity>
+   <a-entity gltf-model="#car" position="16.44993 0.04289 -47" scale="0.025 0.025 0.025" animation="property: position; to: 16.44993 0.04289 47; dur: 5000; easing: linear; loop: true"></a-entity>
+   <a-entity gltf-model="#coche" position="-16.16428 0.022 -47" scale="" animation="property: position; to: -16.16428 0.022 47; dur: 5000; easing: linear; loop: true"></a-entity>
+   <a-entity gltf-model="#bonsai" position="-20.48348 -1.7549 9.03515" scale="" rotation=""></a-entity>
+   <a-entity gltf-model="#Florbase1" position="-1.71759 -3.91494 8.91496" scale="0.001 0.001 0.001" rotation="0 0 0" ></a-entity>
+   <a-entity gltf-model="#mariposa" position="-20.48348 1.37437 9.03515" scale="0.02 0.02 0.02" rotation=""></a-entity>
+   <a-entity gltf-model="#Preso" position="-25.71717 14.57247 -22.51383" scale="0.9591 1.10978 1.08782" animation="property: rotation; to: 0 0 360; loop: true; dur: 10000"></a-entity>
+   <a-entity gltf-model="#Alexia" position="0 0.50 0" scale=".66 .60 .66" rotation="0 350.195 0" ></a-entity>
+   <a-entity gltf-model="#manoleon2" position="-27.08496 -2.910 -73.9349" scale="2 2 2" ></a-entity>
+   <a-entity gltf-model="#arboli" position="-78.36958 -1.49327 -9.60311" scale=""></a-entity>
+   <a-entity gltf-model="#manoleon2" position="16.893 -3.031 -17.98914" scale="2 2 2"></a-entity>
+   <a-entity gltf-model="#manoleon2" position="64.15722 -2.910 29.60938" scale="2 2 2"></a-entity>
+   <a-entity gltf-model="#manoleon3" position="51.14879 -3.910 -9.71726" scale="2 2 2"></a-entity>
+   <a-entity gltf-model="#manoleon3" position="-44.90745 -3.031 68.88393" scale="2 2 2"></a-entity>
+   <a-entity gltf-model="#Florbase1" position="-42.40144 -3.91494 8.91496" scale="0.001 0.001 0.001" rotation=""></a-entity>
+   <a-entity gltf-model="#manoleon4" position="-6.68661 -3.031 71.14078" scale="2 2 2" rotation=""></a-entity>
+   <a-entity gltf-model="#manoleon3" position="-84.97991 -3.031 -24.96675" scale="2 2 2" rotation=""></a-entity>
+   <a-entity gltf-model="#manoleon4" position="29.62717 -3.031 -53.14242" scale="2 2 2" rotation=""></a-entity>
+   <a-entity gltf-model="#ebri" position="63.53367 3 72.23169" scale="" rotation="-360 0 0" ></a-entity>
+   
+   
+
+   <a-entity gltf-model="#flor1" position="-27.177 1296 -9.343" rotation="0 351.8164659386709 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-entity>
+   <a-entity gltf-model="#flor2" position="-73.77904 1.80681 52.0005" rotation="0 360 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-entity>   
+   <a-entity gltf-model="#flor3" position="-79.36337 6.71526 46.57535" scale="1.564 1.702 1.275" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-entity>
+   <a-entity gltf-model="#flor4" position="-71.14705 11.68991 50.70469" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-entity>  
+   <a-entity gltf-model="#flor5" position="-71.09192 10.82577 54.61157" rotation="0 341.61813827978443 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-entity>
+   <a-entity gltf-model="flor6" position="-71.1243 11.84315 52.10345" rotation="0 360 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-entity>
+   <a-entity gltf-model="#flor7" position="-75.09953 2.00902 43.78488" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000" rotation="0 360 0"></a-entity>
+   <a-entity gltf-model="#flor8" position="-73.54006 7.53913 56.20162" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-entity>
+   <a-entity gltf-model="#flor9" position="-65.35298 15.38147 52.14099" rotation="0 360 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-entity>
+   <a-entity gltf-model="#flor10" position="-68.73929 8.83671 47.19832" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-entity>
+   <a-entity gltf-model="#flor11" position="-72.6943 13.75904 55.00168" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-entity>
+   <a-entity gltf-model="#flor12" position="-74.51136 11.24006 58.4235" scale="1.323 1.383 1" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-entity>
+   <a-entity gltf-model="#flor13" position="-75.36439 2.199 45.82642" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-entity>
+   <a-entity gltf-model="#flor14" position="-68.74549 3 62.29906" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-entity>
+   <a-entity gltf-model="#flor15" position="-69.63343 6.57156 57.80188" rotation="-3.772521566262915 70.50570899456697 15.996492995352886" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-entity>
+   <a-entity gltf-model="#flor16" position="-75.28116 11.20597 48.33121" rotation="0 360 0" scale="1.273 1.545 1" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-entity>
+   <a-entity gltf-model="#flor17" position="-75.9334 5.15582 46.22125" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-entity>
+   <a-entity gltf-model="#flor18" position="-74.46447 10.86941 47.54607" rotation="0 360 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-entity>
+   <a-entity gltf-model="#flor19" position="-68.13093 3 55.76686" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-entity>
+   <a-entity gltf-model="#flor20" position="-71.634 7.36567 60.88114" rotation="-69.77245251656659 177.443341339479 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-entity>
+    
+
+
+</a-scene>
+    
+</body>
+</html>
+</a-scene>
+    
+</body>
+</html>
